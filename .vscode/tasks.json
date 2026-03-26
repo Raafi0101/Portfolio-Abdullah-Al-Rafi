@@ -1,0 +1,51 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Install Dependencies",
+      "type": "shell",
+      "command": "npm install",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "detail": "Install project dependencies"
+    },
+    {
+      "label": "Start Development Server",
+      "type": "shell",
+      "command": "npm run dev",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "isBackground": true,
+      "problemMatcher": [],
+      "detail": "Start Next.js development server on http://localhost:3000"
+    },
+    {
+      "label": "Build for Production",
+      "type": "shell",
+      "command": "npm run build",
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "problemMatcher": [],
+      "detail": "Create optimized production build"
+    },
+    {
+      "label": "Start Production Server",
+      "type": "shell",
+      "command": "npm start",
+      "group": {
+        "kind": "test",
+        "isDefault": false
+      },
+      "isBackground": true,
+      "problemMatcher": [],
+      "detail": "Start production server from .next folder"
+    }
+  ]
+}
