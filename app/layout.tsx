@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://abdullah-al-rafi.vercel.app',
     title: 'Abdullah Al Rafi | Software Engineer',
-    description: 'Portfolio of Abdullah Al Rafi - Software Engineer specializing in data analysis, automation, and efficient solutions.',
+    description: 'Portfolio of Abdullah Al Rafi - AI Software Engineer specializing in data analysis, automation, and efficient solutions.',
     siteName: 'Abdullah Al Rafi Portfolio',
   },
   twitter: {

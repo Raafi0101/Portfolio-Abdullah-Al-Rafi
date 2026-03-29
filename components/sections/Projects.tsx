@@ -1,37 +1,47 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import { motion } from 'framer-motion'
-import { ExternalLink, Github, MoreVertical } from 'lucide-react'
-import { projects } from '@/lib/constants'
-import { Button, Card, CardContent, Modal } from '@/components/ui'
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { ExternalLink, Github, MoreVertical } from "lucide-react";
+import { projects } from "@/lib/utils";
+import { Button, Card, CardContent, Modal } from "@/components/ui";
 
 export function Projects() {
-  const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null)
+  const [selectedProject, setSelectedProject] = useState<
+    (typeof projects)[0] | null
+  >(null);
 
   return (
-    <section id="projects" className="section-padding bg-gray-50 dark:bg-dark-900">
+    <section
+      id="projects"
+      className="section-padding bg-gray-50 dark:bg-dark-900"
+    >
       <div className="container-custom">
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
             Featured Projects
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            A selection of projects showcasing my expertise in data analysis, automation, and software development
+            A selection of projects showcasing my expertise in data analysis,
+            automation, and software development
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card key={project.id} delay={index * 0.1} className="h-full flex flex-col">
+            <Card
+              key={project.id}
+              delay={index * 0.1}
+              className="h-full flex flex-col"
+            >
               {/* Project Image */}
               <div className="relative h-48 bg-gradient-to-br from-primary-400 to-blue-600 overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <span className="text-6xl opacity-30">
-                    {index === 0 && '📊'}
-                    {index === 1 && '⚡'}
-                    {index === 2 && '🗄️'}
-                    {index === 3 && '🔬'}
+                    {index === 0 && "📊"}
+                    {index === 1 && "⚡"}
+                    {index === 2 && "🗄️"}
+                    {index === 3 && "🔬"}
                   </span>
                 </div>
                 <div className="absolute top-3 right-3">
@@ -104,7 +114,7 @@ export function Projects() {
         <Modal
           isOpen={selectedProject !== null}
           onClose={() => setSelectedProject(null)}
-          title={`Case Study: ${selectedProject?.title || ''}`}
+          title={`Case Study: ${selectedProject?.title || ""}`}
         >
           {selectedProject && (
             <div className="space-y-6">
@@ -203,5 +213,5 @@ export function Projects() {
         </Modal>
       </div>
     </section>
-  )
+  );
 }

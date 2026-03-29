@@ -1,33 +1,37 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { GraduationCap, Target, Award, Lightbulb } from 'lucide-react'
-import Image from 'next/image'
-import { about } from '@/lib/constants'
+import { motion } from "framer-motion";
+import { GraduationCap, Target, Award, Lightbulb } from "lucide-react";
+import Image from "next/image";
+import { about } from "@/lib/constants";
 
 export function About() {
   const highlights = [
     {
       icon: GraduationCap,
-      title: 'Computer Science and Engineering',
-      description: 'Bachelor\'s degree with solid foundations in software engineering principles',
+      title: "Computer Science and Engineering",
+      description:
+        "Bachelor's degree with solid foundations in software engineering principles",
     },
     {
       icon: Target,
-      title: 'Problem Solver',
-      description: 'Analytical thinker focused on efficient, scalable solutions',
+      title: "Problem Solver",
+      description:
+        "Analytical thinker focused on efficient, scalable solutions with AI",
     },
     {
       icon: Award,
-      title: 'Research Experience',
-      description: 'Hands-on experience in data analysis and technical documentation',
+      title: "Research Experience",
+      description:
+        "Hands-on experience in data analysis and technical documentation",
     },
     {
       icon: Lightbulb,
-      title: 'Continuous Learner',
-      description: 'Committed to staying updated with latest technologies and best practices',
+      title: "Continuous Learner",
+      description:
+        "Committed to staying updated with latest technologies and best practices",
     },
-  ]
+  ];
 
   return (
     <section id="about" className="section-padding bg-gray-50 dark:bg-dark-900">
@@ -52,8 +56,12 @@ export function About() {
               </div>
               <div className="absolute -bottom-6 -right-6 bg-white dark:bg-dark-800 p-4 rounded-xl shadow-lg border border-gray-100 dark:border-dark-700">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary-600 dark:text-primary-400">3.30</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">CGPA</div>
+                  <div className="text-3xl font-bold text-primary-600 dark:text-primary-400">
+                    3.30
+                  </div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">
+                    CGPA
+                  </div>
                 </div>
               </div>
             </div>
@@ -70,9 +78,7 @@ export function About() {
               About Me
             </h2>
             <div className="space-y-4 text-gray-700 dark:text-gray-300 mb-8">
-              <p className="leading-relaxed">
-                {about.summary}
-              </p>
+              <p className="leading-relaxed">{about.summary}</p>
             </div>
 
             {/* Highlights */}
@@ -104,5 +110,5 @@ export function About() {
         </div>
       </div>
     </section>
-  )
+  );
 }

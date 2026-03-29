@@ -1,9 +1,9 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { ArrowRight, Calendar, Clock, Tag } from 'lucide-react'
-import { blog } from '@/lib/constants'
-import { Card, CardContent, Button } from '@/components/ui'
+import { motion } from "framer-motion";
+import { ArrowRight, Calendar, Clock, Tag } from "lucide-react";
+import { blog } from "@/lib/constants";
+import { Card, CardContent, Button } from "@/components/ui";
 
 export function Blog() {
   return (
@@ -14,7 +14,7 @@ export function Blog() {
             Latest Articles
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Thoughts, insights, and tutorials on software development and technology
+            Thoughts, insights, and tutorials on development and technology
           </p>
         </div>
 
@@ -40,7 +40,13 @@ export function Blog() {
                   <div className="flex items-center gap-4 mb-3 text-xs text-gray-500 dark:text-gray-500">
                     <div className="flex items-center gap-1">
                       <Calendar className="h-3 w-3" />
-                      <span>{new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+                      <span>
+                        {new Date(post.date).toLocaleDateString("en-US", {
+                          month: "short",
+                          day: "numeric",
+                          year: "numeric",
+                        })}
+                      </span>
                     </div>
                     <div className="flex items-center gap-1">
                       <Clock className="h-3 w-3" />
@@ -84,5 +90,5 @@ export function Blog() {
         </div>
       </div>
     </section>
-  )
+  );
 }
