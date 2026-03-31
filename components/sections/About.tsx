@@ -54,16 +54,6 @@ export function About() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-white dark:bg-dark-800 p-4 rounded-xl shadow-lg border border-gray-100 dark:border-dark-700">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary-600 dark:text-primary-400">
-                    3.30
-                  </div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">
-                    CGPA
-                  </div>
-                </div>
-              </div>
             </div>
           </motion.div>
 
