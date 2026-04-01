@@ -4,7 +4,22 @@
       "Bash(npm install:*)",
       "Bash(npm run:*)",
       "Bash(pkill -f 'next build')",
-      "Bash(tee /tmp/build.log)"
+      "Bash(tee /tmp/build.log)",
+      "WebFetch(domain:sajibkhansk.vercel.app)",
+      "WebSearch",
+      "Bash(grep:*)",
+      "Bash(pkill:*)",
+      "Bash(npm cache:*)",
+      "Bash(for f:*)",
+      "Bash(do)",
+      "Bash(sed -i '' 's/bg-dark-900\\\\/50/bg-white dark:bg-dark-900\\\\/50/g' \"$f\")",
+      "Bash(sed -i '' 's/bg-dark-900\\\\/30/bg-white dark:bg-dark-900\\\\/30/g' \"$f\")",
+      "Bash(sed -i '' 's/border-gray-800/dark:border-gray-800/g' \"$f\")",
+      "Bash(sed -i '' 's/dark:bg-white dark:bg-dark-900/dark:bg-dark-900/g' \"$f\")",
+      "Bash(sed -i '' 's/dark:bg-white dark:bg-dark-950/dark:bg-dark-950/g' \"$f\")",
+      "Bash(sed -i '' 's/dark:bg-white dark:bg-dark-900\\\\/30/dark:bg-dark-900\\\\/30/g' \"$f\")",
+      "Bash(sed -i '' 's/dark:bg-white dark:bg-dark-900\\\\/50/dark:bg-dark-900\\\\/50/g' \"$f\")",
+      "Bash(sed -i '' 's/dark:dark:border/dark:border/g' \"$f\")"
     ]
   }
 }
